@@ -28,7 +28,7 @@ func Run() {
 			validPasswordCount++
 		}
 	}
-	if scanner.Err() != nil {
+	if err = scanner.Err(); err != nil {
 		log.Fatalf("scanner error: %v", err)
 	}
 
