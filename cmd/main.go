@@ -1,7 +1,7 @@
 package main
 
-import "github.com/imedvedec/aoc-2020/three"
+import "github.com/imedvedec/aoc-2020/five"
 
 func main() {
-	three.Run()
+	five.Run()
 }
