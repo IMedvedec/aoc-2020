@@ -15,18 +15,18 @@ var (
 	requiredFileds = [...]string{"byr", "iyr", "eyr", "hgt", "hcl", "ecl", "pid"}
 )
 
-type Document map[string]interface{}
+type document map[string]interface{}
 
-func newDocument() Document {
-	var newDocument Document = make(map[string]interface{})
+func newDocument() document {
+	var newDocument document = make(map[string]interface{})
 	return newDocument
 }
 
-func (doc Document) isEmpty() bool {
+func (doc document) isEmpty() bool {
 	return len(doc) == 0
 }
 
-func (doc Document) isPassport() bool {
+func (doc document) isPassport() bool {
 	isValid := true
 
 	for _, field := range requiredFileds {
@@ -57,7 +57,7 @@ func Run() {
 	log.Printf("Valid passport count: %d\n", validPasspordCount)
 }
 
-func scanDocument(scanner *bufio.Scanner) Document {
+func scanDocument(scanner *bufio.Scanner) document {
 	document := newDocument()
 
 	for scanner.Scan() {

@@ -1,9 +1,7 @@
 package main
 
-import (
-	"github.com/imedvedec/aoc-2020/forth"
-)
+import "github.com/imedvedec/aoc-2020/three"
 
 func main() {
-	forth.Run()
+	three.Run()
 }
