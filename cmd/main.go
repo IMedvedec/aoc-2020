@@ -1,9 +1,7 @@
 package main
 
-import (
-	"github.com/imedvedec/aoc-2020/seventeen"
-)
+import "github.com/imedvedec/aoc-2020/nine"
 
 func main() {
-	seventeen.Run()
+	nine.Run()
 }
